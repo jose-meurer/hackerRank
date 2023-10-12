@@ -1,4 +1,4 @@
-package javaChallenges;
+package Java;
 
 public class WelcomeToJava {
 

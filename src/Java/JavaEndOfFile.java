@@ -1,4 +1,4 @@
-package javaChallenges;
+package Java;
 
 import javax.naming.spi.DirObjectFactory;
 import java.util.Scanner;

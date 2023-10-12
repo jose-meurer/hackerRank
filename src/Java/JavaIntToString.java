@@ -1,4 +1,4 @@
-package javaChallenges;
+package Java;
 
 import java.util.Scanner;
 import java.security.*;
