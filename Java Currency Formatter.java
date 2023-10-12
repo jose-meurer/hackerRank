@@ -1,11 +1,11 @@
-package Java;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-import java.text.NumberFormat;
-import java.util.Locale;
-import java.util.Scanner;
-
-public class JavaCurrencyFormatter {
-
+public class Solution {
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double payment = scanner.nextDouble();

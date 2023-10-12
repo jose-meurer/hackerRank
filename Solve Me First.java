@@ -1,8 +1,6 @@
-package Java;
+import java.util.*;
 
-import java.util.Scanner;
-
-public class SolveMeFirst {
+public class Solution {
 
 
     static int solveMeFirst(int a, int b) {
@@ -19,9 +17,9 @@ public class SolveMeFirst {
         int sum;
         sum = solveMeFirst(a, b);
         System.out.println(sum);
-
     }
 }
+
 
 /*
 https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true

@@ -1,15 +1,21 @@
-package Java;
-
 import java.io.*;
-import java.util.List;
-import java.util.stream.Stream;
-
+import java.util.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class AVeryBigSum {
+class Result {
+
+    /*
+     * Complete the 'aVeryBigSum' function below.
+     *
+     * The function is expected to return a LONG_INTEGER.
+     * The function accepts LONG_INTEGER_ARRAY ar as parameter.
+     */
 
     public static long aVeryBigSum(List<Long> ar) {
         // Write your code here
+
         long result = 0;
         for(int i = 0; i < ar.size(); i++) {
             result += ar.get(i);
@@ -18,6 +24,9 @@ public class AVeryBigSum {
         return result;
     }
 
+}
+
+public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -28,7 +37,7 @@ public class AVeryBigSum {
                 .map(Long::parseLong)
                 .collect(toList());
 
-        long result = aVeryBigSum(ar);
+        long result = Result.aVeryBigSum(ar);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
@@ -37,3 +46,9 @@ public class AVeryBigSum {
         bufferedWriter.close();
     }
 }
+
+
+/*
+
+https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true
+ */

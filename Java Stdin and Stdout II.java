@@ -1,15 +1,10 @@
-package Java;
-
 import java.util.Scanner;
 
-public class JavaStdinStdout2 {
+public class Solution {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int i = scan.nextInt();
-        double d = scan.nextDouble();
-        scan.nextLine();
-        String s = scan.nextLine();
 
         // Write your code here.
 

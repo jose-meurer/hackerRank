@@ -1,9 +1,9 @@
-package Java;
+import java.util.*;
+import java.io.*;
 
-import java.util.Scanner;
 
-public class JavaDatatypes {
 
+class Solution{
     public static void main(String[] argh) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
@@ -23,7 +23,7 @@ public class JavaDatatypes {
 
                 //Complete the code
             } catch (Exception e) {
-                System.out.println(sc.next() + " can't be fitted anywhere.");  /* Quando o Scanner lança uma exception, o buffer não é limpo */
+                System.out.println(sc.next() + " can't be fitted anywhere.");
             }
         }
     }

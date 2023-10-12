@@ -1,14 +1,19 @@
-package Java;
-
 import java.io.*;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Stream;
-
+import java.util.*;
+import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class CompareTheTriplets {
+class Result {
+
+    /*
+     * Complete the 'compareTriplets' function below.
+     *
+     * The function is expected to return an INTEGER_ARRAY.
+     * The function accepts following parameters:
+     *  1. INTEGER_ARRAY a
+     *  2. INTEGER_ARRAY b
+     */
 
     public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
 
@@ -28,7 +33,9 @@ public class CompareTheTriplets {
         return Arrays.asList(alice, bob);
     }
 
+}
 
+public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -41,7 +48,7 @@ public class CompareTheTriplets {
                 .map(Integer::parseInt)
                 .collect(toList());
 
-        List<Integer> result = compareTriplets(a, b);
+        List<Integer> result = Result.compareTriplets(a, b);
 
         bufferedWriter.write(
                 result.stream()
@@ -54,6 +61,7 @@ public class CompareTheTriplets {
         bufferedWriter.close();
     }
 }
+
 
 /*
 
