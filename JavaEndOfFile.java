@@ -1,6 +1,5 @@
 package Java;
 
-import javax.naming.spi.DirObjectFactory;
 import java.util.Scanner;
 
 public class JavaEndOfFile {
@@ -14,7 +13,7 @@ public class JavaEndOfFile {
         while(sc.hasNext()) {
             N = sc.nextLine();
 
-            if (N.contains("end-of-file")) { //Para o programa se tiver "end-of-file" no input
+            if (N.contains("end-of-file")) { //Stop program se tiver "end-of-file" no input
                 System.out.println(i + " " + N);
                 i++;
                 break;
